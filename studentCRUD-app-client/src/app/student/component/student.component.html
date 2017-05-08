@@ -1,0 +1,46 @@
+<html>
+
+
+<table>
+  <thead>
+  <tr>
+    <th data-field="name">ID</th>
+    <th data-field="name">Name</th>
+    <th data-field="name">Street</th>
+    <th data-field="name">City</th>
+    <th data-field="name">State</th>
+    <th data-field="name">Zipcode</th>
+    <th data-field="name">Country</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let student of content">
+      <td>{{ student.id }}</td>
+      <td>{{ student.studentName }}</td>
+      <td>{{ student.street }}</td>
+      <td>{{ student.city }}</td>
+      <td>{{ student.state }}</td>
+      <td>{{ student.zipcode }}</td>
+      <td>{{ student.country }}</td>
+      <!-- <td>
+        <a [routerLink]="['/student', student.id]">
+          <i class="material-icons">EDIT</i>
+        </a>
+      </td>
+      <td>
+        <a [routerLink]="['/student', student.id]">
+          <i class="material-icons">delete</i>
+        </a>
+      </td> -->
+    </tr>
+  </tbody>
+</table>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large waves-effect waves-light green"
+    >
+    <i class="material-icons">add</i>
+  </a>
+</div>
+</html>
